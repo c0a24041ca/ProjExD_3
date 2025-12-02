@@ -226,8 +226,9 @@ def main():
                     pg.display.update()
                     break
 
-        bombs = [bomb for bomb in bombs if bomb is not None]
+       
         beams = [beam for beam in beams if beam is not None]
+        bombs = [bomb for bomb in bombs if bomb is not None]
         explosions = [ex for ex in explosions if ex.life > 0]
 
         key_lst = pg.key.get_pressed()
